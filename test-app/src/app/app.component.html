@@ -1,6 +1,13 @@
 <section>
- <app-filters></app-filters>
- <app-data-table></app-data-table>
- <app-popup></app-popup>
+  <app-filters></app-filters>
+  <ag-grid-angular 
+    style="height: 500px;" 
+    class="ag-theme-balham"
+    [enableSorting]="true"
+    [rowData]="rowData | async" 
+    [columnDefs]="columnDefs"
+    >
+  </ag-grid-angular>
+  <app-popup></app-popup>
 </section>
 

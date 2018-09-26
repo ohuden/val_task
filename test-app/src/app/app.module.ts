@@ -6,6 +6,9 @@ import { PopupComponent } from './components/popup/popup.component';
 import { DataTableComponent } from './components/data-table/data-table.component';
 import { FiltersComponent } from './components/filters/filters.component';
 
+import { AgGridModule } from 'ag-grid-angular';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +17,9 @@ import { FiltersComponent } from './components/filters/filters.component';
     FiltersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent]
