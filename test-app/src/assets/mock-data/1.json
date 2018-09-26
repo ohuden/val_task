@@ -1,38 +1,38 @@
 [
     {
         "id": "1",
-        "county": "argentina",
+        "country": "argentina",
         "quantity" : 10,
         "rmc": "M1234567"
     },
     {
         "id": "2",
-        "county": "armenia",
-        "quantity" : 10,
+        "country": "armenia",
+        "quantity" : 9,
         "rmc": "M1233242"
     },
     {
         "id": "3",
-        "county": "belgium",
-        "quantity" : 10,
+        "country": "belgium",
+        "quantity" : 8,
         "rmc": "M2342342"
     },
     {
         "id": "4",
-        "county": "canada",
-        "quantity" : 10,
+        "country": "canada",
+        "quantity" : 7,
         "rmc": "M1212122"
     },
     {
         "id": "5",
-        "county": "denmark",
-        "quantity" : 10,
+        "country": "denmark",
+        "quantity" : 6,
         "rmc": "M1111111"
     },
     {
         "id": "6",
-        "county": "greece",
-        "quantity" : 10,
+        "country": "greece",
+        "quantity" : 5,
         "rmc": "M1234333"
     }
 ]

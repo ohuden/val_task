@@ -10,9 +10,9 @@ export class AppComponent {
   title = 'test-app';
 
   columnDefs = [
-    {headerName: 'Make', field: 'make' },
-    {headerName: 'Model', field: 'model' },
-    {headerName: 'Price', field: 'price'}
+    {headerName: 'Country', field: 'country' },
+    {headerName: 'Quantity', field: 'quantity' },
+    {headerName: 'RMC', field: 'rmc'}
 ];
 
 rowData: any;
