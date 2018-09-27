@@ -1,27 +1,13 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+
 
 @Component({
-  selector: 'app-root',
+  selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: [ './app.component.css' ]
 })
-export class AppComponent {
-  title = 'test-app';
-
-  columnDefs = [
-    {headerName: 'Country', field: 'country' },
-    {headerName: 'Quantity', field: 'quantity' },
-    {headerName: 'RMC', field: 'rmc'}
-];
-
-rowData: any;
-
-constructor(private http: HttpClient) {
+export class AppComponent  {
+  name = 'Angular 6';
 
 }
 
-ngOnInit() {
-    this.rowData = this.http.get("../assets/mock-data/1.json");
-}
-}
