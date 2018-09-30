@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-6">
+    <label for="filter1">Country: </label>
+    <select name="filter1" id="filter1">
+      <option value="default" selected>All countries</option>
+      <option *ngFor="let data of datas" value="{{data.country}}">{{data.country}}</option>
+    </select>
+  </div>
+  <div class="col-6">
+    <label for="filter2">RMC: </label>
+    <select name="filter1" id="filter2">
+      <option value="default" selected>All RMCs</option>
+      <option  *ngFor="let data of datas" [value]="data.rmc">{{data.rmc}}</option>
+    </select>
+  </div>
+</div>
