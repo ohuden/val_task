@@ -9,7 +9,7 @@ import { RootStoreModule } from './root-store';
 import { AppRoutingModule } from './app-routing.module';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
-import { DataTableItemComponent } from './components/data-table-item/data-table-item.component';
+
 import { DataTableListComponent } from './components/data-table-list/data-table-list.component';
 
 
@@ -17,10 +17,7 @@ import { DataTableListComponent } from './components/data-table-list/data-table-
 @NgModule({
   declarations: [
     AppComponent,
-
     DataTableComponent,
-
-    DataTableItemComponent,
     DataTableListComponent
   ],
   imports: [
