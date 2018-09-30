@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-
+import { PopUpStoreModule } from './popup-store';
 import { DataTableStoreModule } from './data-table-store';
 
 @NgModule({
   imports: [
     CommonModule,
     DataTableStoreModule,
+    PopUpStoreModule,
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({

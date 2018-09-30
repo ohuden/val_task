@@ -45,16 +45,7 @@ export class DataTableListComponent implements OnInit {
       });
     });
   }
-  onSelectionChanged() {
-    var selectedRows = this.gridApi.getSelectedRows();
-    var selectedRowsString = "";
-    selectedRows.forEach(function(selectedRow, index) {
-      if (index !== 0) {
-        selectedRowsString += ", ";
-      }
-      selectedRowsString += selectedRow.athlete;
-    });
-    document.querySelector("#selectedRows").innerHTML = selectedRowsString;
+  onRowClicked(event: any) {
+    console.log(event.data.rmc);        
   }
-
 }
