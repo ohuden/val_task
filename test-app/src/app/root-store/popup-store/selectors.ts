@@ -21,10 +21,10 @@ import {
     state: object
   ) => PopUpData[] = featureAdapter.getSelectors(selectPopUpDataState).selectAll;
   
-  export const selectDataById = (id: string) =>
+  export const selectDataById = (id: number) =>
     createSelector(this.selectAllPopUpDataItems, (allData: PopUpData[]) => {
       if (allData) {
-        return allData.find(p => p.price == id);
+        return allData.find(p => p.id == id);
       } else {
         return null;
       }

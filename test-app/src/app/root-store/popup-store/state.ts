@@ -4,9 +4,9 @@ import { PopUpData } from '../../models';
 export const featureAdapter: EntityAdapter<
 PopUpData
 > = createEntityAdapter<PopUpData>({
-  selectId: model => model.price,
+  selectId: model => model.id,
   sortComparer: (a: PopUpData, b: PopUpData): number =>
-    b.price.toString().localeCompare(a.price)
+    b.id.toString().localeCompare(a.price)
 });
 
 export interface State extends EntityState<PopUpData> {
