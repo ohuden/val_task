@@ -1,14 +1,18 @@
-<h1>Test task</h1>
-
 <div *ngIf="loading">
-	loading
+	loading...
 </div>
 <div *ngIf="!loading">
-	<div *ngIf="data">
-		<app-data-table-item *ngFor="let row of data" [data]="data"></app-data-table-item>
+	<div *ngIf="datas">
+		<ag-grid-angular 
+			style="height: 500px; overflow: hidden;" 
+			[enableSorting]="true"
+			[rowData]="datas" 
+			[columnDefs]="columnDefs"
+			>
+		</ag-grid-angular>
 	</div>
 
-	<div *ngIf="!data">No data found</div>
+	<div *ngIf="!datas">No data found :(</div>
 </div>
 
 <div *ngIf="error">

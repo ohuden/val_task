@@ -17,14 +17,14 @@ import {
   styleUrls: ['./data-table.component.css']
 })
 export class DataTableComponent implements OnInit {
-  data$: Observable<DataTable[]>;
+  datas$: Observable<DataTable[]>;
   error$: Observable<any>;
   isLoading$: Observable<boolean>;
 
   constructor(private store$: Store<RootStoreState.State>) { }
 
   ngOnInit() {
-    this.data$ = this.store$.select(
+    this.datas$ = this.store$.select(
         DataTableStoreSelectors.selectAllDataTableItems
     );
 

@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { DataTableItemComponent } from './components/data-table-item/data-table-item.component';
 import { DataTableListComponent } from './components/data-table-list/data-table-list.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,

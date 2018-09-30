@@ -9,12 +9,14 @@ import { DataTable } from '../../models';
 })
 export class DataTableListComponent implements OnInit {
 
-  @Input() data: DataTable[];
+  @Input() datas: DataTable[];
   @Input() loading: boolean;
   @Input() error: any;
-
-  @Output() refresh = new EventEmitter();
-
+  columnDefs = [
+    {headerName: 'Country', field: 'country' },
+    {headerName: 'Quantity', field: 'quantity' },
+    {headerName: 'RMC', field: 'rmc'}
+  ];
   constructor() { }
 
   ngOnInit() {
